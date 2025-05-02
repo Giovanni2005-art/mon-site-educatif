@@ -1,0 +1,174 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Leçon – Fonctions avancées en Python</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background : linear-gradient(to right, #7b4397, #dc2430) ;
+      Color : #fff ;
+    }
+
+    Nav {
+      Background-color : rgba(0, 0, 0, 0.3) ;
+      Padding : 15px ;
+      Text-align : center ;
+    }
+
+    Nav a {
+      Color : #fff ;
+      Margin : 0 12px ;
+      Text-decoration : none ;
+    }
+
+    Nav a :hover {
+      Text-decoration : underline ;
+    }
+
+    .container {
+      Max-width : 950px ;
+      Margin : auto ;
+      Padding : 40px 20px ;
+      Background-color : rgba(0, 0, 0, 0.25) ;
+      Border-radius : 12px ;
+      Backdrop-filter : blur(3px) ;
+    }
+
+    H1, h2 {
+      Color : #fff ;
+    }
+
+    Pre {
+      Background : #111 ;
+      Padding : 12px ;
+      Border-radius : 8px ;
+      Overflow-x : auto ;
+      Color : #0f0 ;
+    }
+
+    .quiz {
+      Background : rgba(255,255,255,0.1) ;
+      Padding : 20px ;
+      Border-radius : 10px ;
+      Margin-top : 30px ;
+    }
+
+    .actions {
+      Margin-top : 30px ;
+      Display : flex ;
+      Justify-content : space-between ;
+      Flex-wrap : wrap ;
+    }
+
+    .actions button {
+      Padding : 12px 20px ;
+      Margin : 5px ;
+      Border : none ;
+      Border-radius : 8px ;
+      Background-color : #fff ;
+      Color : #333 ;
+      Cursor : pointer ;
+      Font-weight : bold ;
+      Transition : background 0.2s ;
+    }
+
+    .actions button :hover {
+      Background-color : #eee ;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href= "index.HTML">Accueil</a>
+  <a href= "matieres.HTML">Matières</a>
+  <a href= "dashboard.HTML">Tableau de bord</a>
+  <a href= "python.HTML">Retour à Python</a>
+</nav>
+
+<div class= "container ">
+  <h1>Leçon 8 : Fonctions avancées et portée des variables</h1>
+
+  <h2>1. Paramètres par défaut</h2>
+  <pre>
+Def saluer(nom= "visiteur ") :
+    Print(f "Bonjour {nom} ! ")
+
+Saluer()
+Saluer("Alice ")
+  </pre>
+
+  <h2>2. Paramètres nommés</h2>
+  <pre>
+Def afficher_infos(nom, age, ville) :
+    Print(f "{nom}, {age} ans, habite à {ville} ")
+
+Afficher_infos(age=25, ville= "Lyon ", nom= "Maxime ")
+  </pre>
+
+  <h2>3. Valeurs de retour multiples</h2>
+  <pre>
+Def calculs(x, y) :
+    Return x + y, x * y, x – y
+
+Somme, produit, difference = calculs(4, 2)
+Print(somme, produit, difference)
+  </pre>
+
+  <h2>4. Fonctions imbriquées</h2>
+  <pre>
+Def exterieur() :
+    Def interieur() :
+        Print(" Fonction intérieure appelée ")
+    Interieur()
+
+Exterieur()
+  </pre>
+
+  <h2>5. Portée des variables</h2>
+  <pre>
+X = 10
+
+Def ma_fonction() :
+    X = 5  # locale
+    Print(" Valeur locale : ", x)
+
+Ma_fonction()
+Print(" Valeur globale : ", x)
+  </pre>
+
+  <h2>6. Utilisation de global et nonlocal</h2>
+  <pre>
+Def test_global() :
+    Global x
+    X = 100
+
+Def test_nonlocal() :
+    X = " externe "
+    Def interne() :
+        Nonlocal x
+        X = " modifié "
+    Interne()
+    Print(" Valeur de x : ", x)
+
+Test_nonlocal()
+  </pre>
+
+  <h2>7. Exercice</h2>
+  <div class= "quiz ">
+    <p><strong>Énoncé :</strong> Écris une fonction appelée <code>statistiques</code> qui prend une liste de nombres et retourne leur moyenne, leur maximum et leur minimum.</p>
+    <pre>
+# Ton code ici
+    </pre>
+  </div>
+
+  <div class= "actions ">
+    <button onclick= "window.location.href=’lecon7.HTML’ ">Leçon précédente</button>
+    <button>Marquer comme terminé</button>
+    <button onclick= "window.location.href=’lecon9.HTML’ ">Leçon suivante</button>
+  </div>
+</div>
+
+</body>
+</html>

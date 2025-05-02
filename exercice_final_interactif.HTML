@@ -1,0 +1,104 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Exercice interactif Python</title>
+  <script type= "text/javascript " src= "https://cdn.jsdelivr.net/npm/brython@3.11.3/brython.min.js "></script>
+  <script type= "text/javascript " src= "https://cdn.jsdelivr.net/npm/brython@3.11.3/brython_stdlib.js "></script>
+  <style>
+    Body {
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background : #eef2f3 ;
+      Padding : 20px ;
+    }
+    Textarea, pre {
+      Width : 100% ;
+      Font-family : monospace ;
+      Font-size : 15px ;
+      Padding : 10px ;
+      Margin-top : 10px ;
+    }
+    Button {
+      Margin-top : 10px ;
+      Padding : 10px ;
+      Font-weight : bold ;
+    }
+    #output {
+      Background-color : #f4f4f4 ;
+      Border : 1px solid #ccc ;
+      Min-height : 150px ;
+      White-space : pre-wrap ;
+    }
+  </style>
+</head>
+<body onload= "brython() ">
+
+<h1>Exercice Final : Gestionnaire de Notes (Brython)</h1>
+
+<p>Colle ou modifie ton code ci-dessous, puis clique sur " Exécuter " :</p>
+
+<textarea id= "python_code ">
+Def calcul_moyenne(notes) :
+    If not notes :
+        Return 0
+    Return sum(notes.values()) / len(notes)
+
+Notes = {}
+
+While True :
+    Nom = input(" Entrez un nom d’élève (ou ‘stop’) : " )
+    If nom.lower() == ‘stop’ :
+        Break
+    Try :
+        Note = float(input(f "Note de {nom} : " ))
+        Notes[nom] = note
+    Except :
+        Print(" Note invalide. ")
+
+Moyenne = calcul_moyenne(notes)
+Print(f "Moyenne générale : {moyenne :.2f} ")
+
+Admis = [nom for nom, note in notes.items() if note >= 10]
+Print(" Élèves admis : ", " , " .join(admis) if admis else " Aucun ")
+</textarea>
+
+<button onclick= "runPython() ">Exécuter</button>
+
+<h3>Résultat :</h3>
+<pre id= "output "></pre>
+
+<script type= "text/python ">
+From browser import document, console
+Import builtins
+
+Def runPython(*args) :
+    Document[" output "].text =  "" 
+    Code = document[" python_code "].value
+    Try :
+        Exec(code, {" __name__ " : " __main__ "})
+    Except Exception as e :
+        Document[" output "].text = f "Erreur : {e} "
+
+Document[" runPython "] = runPython
+</script>
+
+<script>
+Function runPython() {
+    Document.getElementById(" output ").innerText = ‘’ ;
+    __BRYTHON__.stdin = {
+        Buffer : [],
+        Readline : function() {
+            Let val = prompt(" Entrée utilisateur : ") ;
+            This.buffer.push(val) ;
+            Return val ;
+        }
+    } ;
+    Try {
+        __BRYTHON__.builtins.exec(document.getElementById(" python_code ").value) ;
+    } catch (err) {
+        Document.getElementById(" output ").innerText = err ;
+    }
+}
+</script>
+
+</body>
+</html>

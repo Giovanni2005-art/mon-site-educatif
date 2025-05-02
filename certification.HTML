@@ -1,0 +1,81 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Page de Certification</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : Arial, sans-serif ;
+      Background : linear-gradient(135deg, #667eea, #764ba2) ;
+      Color : white ;
+    }
+    Nav {
+      Background-color : rgba(0, 0, 0, 0.2) ;
+      Padding : 15px ;
+      Text-align : center ;
+    }
+    Nav a {
+      Color : white ;
+      Margin : 0 15px ;
+      Text-decoration : none ;
+    }
+    Nav a :hover {
+      Text-decoration : underline ;
+    }
+    .container {
+      Max-width : 800px ;
+      Margin : 50px auto ;
+      Background-color : rgba(255, 255, 255, 0.1) ;
+      Padding : 30px ;
+      Border-radius : 12px ;
+    }
+    H1 {
+      Text-align : center ;
+    }
+    .certificat {
+      Background-color : white ;
+      Color : #333 ;
+      Padding : 20px ;
+      Border-radius : 10px ;
+      Margin : 20px 0 ;
+    }
+    .certificat button {
+      Margin-top : 10px ;
+      Padding : 10px 20px ;
+      Background-color : #4CAF50 ;
+      Color : white ;
+      Border : none ;
+      Border-radius : 5px ;
+      Cursor : pointer ;
+    }
+    .certificat button :hover {
+      Background-color : #45a049 ;
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <a href= "index.HTML">Accueil</a>
+  <a href= "matieres.HTML">Matières</a>
+  <a href= "dashboard.HTML">Tableau de bord</a>
+  <a href= "certification.HTML">Certifications</a>
+</nav><div class= "container ">
+  <h1>Mes Certifications</h1>  
+< !—Section dynamique (à adapter avec JS + backend)   <div class= "certificat ">
+    <h3>Certificat : Introduction à Python</h3>
+    <p>Nom : <strong id= "nom ">Jean Dupont</strong></p>
+    <p>Date d’obtention : <strong>2 mai 2025</strong></p>
+    <button onclick= "telechargerCertificat(‘python_intro’) ">Télécharger le certificat</button>
+  </div>  <div class= "certificat ">
+    <h3>Certificat : Logique Algorithmique</h3>
+    <p>Nom : <strong id= "nom ">Jean Dupont</strong></p>
+    <p>Date d’obtention : <strong>15 avril 2025</strong></p>
+    <button onclick= "telechargerCertificat(‘algo_cert’) ">Télécharger le certificat</button>
+  </div></div><script>
+Function telechargerCertificat(certId) {
+  Alert(" Le certificat ‘ " + certId + " ‘ sera généré et téléchargé. (fonctionnalité à intégrer dynamiquement) ") ;
+  // Ici tu pourras intégrer un lien de téléchargement réel ou un appel API pour générer un PDF.
+}
+</script></body>
+</html>
+

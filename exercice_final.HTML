@@ -1,0 +1,128 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Exercice final – Python</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background : linear-gradient(to right, #1f4037, #99f2c8) ;
+      Color : #000 ;
+    }
+
+    Nav {
+      Background-color : rgba(0, 0, 0, 0.1) ;
+      Padding : 15px ;
+      Text-align : center ;
+    }
+
+    Nav a {
+      Color : #000 ;
+      Margin : 0 12px ;
+      Text-decoration : none ;
+    }
+
+    Nav a :hover {
+      Text-decoration : underline ;
+    }
+
+    .container {
+      Max-width : 900px ;
+      Margin : auto ;
+      Padding : 40px 20px ;
+      Background-color : rgba(255, 255, 255, 0.8) ;
+      Border-radius : 12px ;
+    }
+
+    H1 {
+      Text-align : center ;
+    }
+
+    Pre {
+      Background-color : #f4f4f4 ;
+      Padding : 12px ;
+      Border-radius : 8px ;
+      Overflow-x : auto ;
+    }
+
+    Textarea {
+      Width : 100% ;
+      Height : 200px ;
+      Margin-top : 15px ;
+      Font-family : monospace ;
+      Font-size : 15px ;
+      Padding : 10px ;
+    }
+
+    Button {
+      Padding : 12px 20px ;
+      Margin-top : 10px ;
+      Background : #1f4037 ;
+      Color : white ;
+      Border : none ;
+      Border-radius : 6px ;
+      Cursor : pointer ;
+      Font-weight : bold ;
+    }
+
+    Button :hover {
+      Background : #16352b ;
+    }
+
+    .hint {
+      Background-color : #e7f7e7 ;
+      Padding : 10px ;
+      Border-left : 5px solid #1f4037 ;
+      Margin-top : 15px ;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href= "index.HTML">Accueil</a>
+  <a href= "matieres.HTML">Matières</a>
+  <a href= "python.HTML">Python</a>
+<a href= "exercice_final_interactif.HTML">Exercice version inéractif</a>
+</nav>
+
+<div class= "container ">
+  <h1>Exercice final : Projet mini-gestionnaire de notes</h1>
+
+  <p><strong>Objectif :</strong> Crée un mini programme Python qui :</p>
+  <ul>
+    <li>Demande à l’utilisateur son nom</li>
+    <li>Laisse entrer les notes d’élèves (nom + note)</li>
+    <li>Stocke ces données dans un dictionnaire</li>
+    <li>Affiche la moyenne générale</li>
+    <li>Affiche les élèves ayant une note ≥ 10 (admis)</li>
+    <li>Utilise au moins une fonction pour le calcul de moyenne</li>
+    <li>Utilise une boucle pour répéter la saisie jusqu’à ce que l’utilisateur dise " stop "</li>
+  </ul>
+
+  <h3>Exemple de sortie attendue :</h3>
+  <pre>
+Bienvenue Alice !
+Entrez un nom d’élève (ou " stop ") : Paul
+Note de Paul : 12
+Entrez un nom d’élève (ou " stop ") : Marie
+Note de Marie : 8
+Entrez un nom d’élève (ou " stop ") : stop
+
+Moyenne générale : 10.0
+Élèves admis : Paul
+  </pre>
+
+  <div class= "hint ">
+    Astuce : Utilise un dictionnaire pour stocker les noms et notes. Exemple : <code>notes["Paul "] = 12</code><br>
+    Utilise une fonction : <code>def moyenne(notes) : …</code>
+  </div>
+
+  <h3>Écris ton code ici :</h3>
+  <textarea placeholder= "Écris ton code ici… "></textarea>
+  <button disabled>Exécuter (simulation)</button>
+  <p><em>*Pour exécuter ce code, utilise un éditeur Python comme Replit, Jupyter, Thonny ou IDLE.</em></p>
+</div>
+
+</body>
+</html>

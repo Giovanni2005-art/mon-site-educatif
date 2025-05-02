@@ -1,0 +1,100 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Toutes les matières</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background-image : url(‘https://cdn.pixabay.com/photo/2016/11/18/14/27/books-1835799_1280.jpg’) ;
+      Background-size : cover ;
+      Background-position : center ;
+      Background-attachment : fixed ;
+      Color : #fff ;
+    }
+
+    .overlay {
+      Background-color : rgba(0, 0, 0, 0.7) ;
+      Min-height : 100vh ;
+      Padding : 40px 20px ;
+    }
+
+    Header {
+      Text-align : center ;
+      Font-size : 32px ;
+      Margin-bottom : 30px ;
+      Color : #f1f1f1 ;
+    }
+
+    .grid {
+      Display : grid ;
+      Grid-template-columns : repeat(auto-fit, minmax(200px, 1fr)) ;
+      Gap : 20px ;
+      Max-width : 1000px ;
+      Margin : 0 auto ;
+    }
+
+    .card {
+      Background-color : rgba(255, 255, 255, 0.1) ;
+      Padding : 20px ;
+      Border-radius : 12px ;
+      Text-align : center ;
+      Cursor : pointer ;
+      Transition : transform 0.2s, background-color 0.3s ;
+    }
+
+    .card :hover {
+      Background-color : rgba(255, 255, 255, 0.2) ;
+      Transform : scale(1.05) ;
+    }
+
+    .card a {
+      Text-decoration : none ;
+      Color : #fff ;
+      Font-size : 18px ;
+      Font-weight : bold ;
+    }
+
+    Nav {
+      Text-align : center ;
+      Margin-bottom : 30px ;
+    }
+
+    Nav a {
+      Color : #ddd ;
+      Margin : 0 10px ;
+      Text-decoration : none ;
+    }
+
+    Nav a :hover {
+      Text-decoration : underline ;
+    }
+  </style>
+</head>
+<body>
+  <div class= "overlay ">
+    <nav>
+      <a href= "index.HTML ">Accueil</a>
+      <a href= "dashboard.HTML ">Tableau de bord</a>
+      <a href= "recherche.HTML ">Recherche</a>
+    </nav>
+
+    <header>Toutes les matières disponibles</header>
+
+    <div class= "grid ">
+      <div class= "card "><a href= "python.HTML ">Python</a></div>
+      <div class= "card "><a href= "langage.HTML">Langage C</a></div>
+      <div class= "card "><a href= "javascript.HTML">JavaScript</a></div>
+      <div class= "card "><a href= "algorithme.HTML">Algorithmique</a></div>
+      <div class= "card "><a href= "developpementweb.HTml">Développement Web</a></div>
+      <div class= "card "><a href= "base.HTML">SQL & Bases de données</a></div>
+      <div class= "card "><a href= "securite.HTML">Sécurité Informatique</a></div>
+      <div class= "card "><a href= "reseau.HTML ">Réseau Informatique</a></div>
+      <div class= "card "><a href= "mathematique.HTML ">Mathématique</a></div>
+      <div class= "card "><a href= "anglais.HTML ">Anglais</a></div>
+      <div class= "card "><a href= "merise.HTML ">Merise</a></div>
+      <div class= "card "><a href= "architecture.HTML ">Architecture des Ordinateurs</a></div>
+    </div>
+  </div>
+</body>
+</html>

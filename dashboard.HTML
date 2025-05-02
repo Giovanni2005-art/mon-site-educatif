@@ -1,0 +1,98 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Tableau de bord</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background : linear-gradient(to right, #1e3c72, #2a5298) ;
+      Color : #fff ;
+    }
+
+    Header {
+      Padding : 20px ;
+      Text-align : center ;
+      Background-color : rgba(0, 0, 0, 0.3) ;
+      Font-size : 24px ;
+    }
+
+    .container {
+      Display : grid ;
+      Grid-template-columns : repeat(auto-fit, minmax(250px, 1fr)) ;
+      Gap : 20px ;
+      Padding : 40px ;
+    }
+
+    .card {
+      Background-color : rgba(255, 255, 255, 0.1) ;
+      Padding : 20px ;
+      Border-radius : 12px ;
+      Box-shadow : 0 0 10px rgba(0,0,0,0.2) ;
+      Backdrop-filter : blur(3px) ;
+    }
+
+    .card h3 {
+      Color : #f1f1f1 ;
+      Margin-bottom : 10px ;
+    }
+
+    .card p {
+      Color : #ccc ;
+    }
+
+    Nav {
+      Background-color : rgba(0,0,0,0.2) ;
+      Padding : 10px ;
+      Text-align : center ;
+    }
+
+    Nav a {
+      Color : #fff ;
+      Margin : 0 15px ;
+      Text-decoration : none ;
+    }
+
+    Nav a :hover {
+      Text-decoration : underline ;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  Bienvenue sur ton tableau de bord
+</header>
+
+<nav>
+  <a href= "index.HTML ">Accueil</a>
+  <a href= "matieres.HTML">Matières</a>
+  <a href= "recherche.HTML">Recherche</a>
+  <a href= "parametres.HTML">Paramètres</a>
+  <a href= "certification.HTML ">Certificats</a>
+</nav>
+
+<div class= "container ">
+  <div class= "card ">
+    <h3>Progression</h3>
+    <p>Python : 45% complété</p>
+    <p>JavaScript : 20% complété</p>
+  </div>
+  <div class= "card ">
+    <h3>Dernières leçons consultées</h3>
+    <p>Boucles en Python</p>
+    <p>Les fonctions JavaScript</p>
+  </div>
+  <div class= "card ">
+    <h3>Cours favoris</h3>
+    <p>Algorithmique Avancée</p>
+    <p>Programmation Web</p>
+  </div>
+  <div class= "card ">
+    <h3>Certificats obtenus</h3>
+    <p>Python Débutant – Mars 2025</p>
+  </div>
+</div>
+
+</body>
+</html>

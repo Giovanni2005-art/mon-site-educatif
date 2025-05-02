@@ -1,0 +1,91 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Connexion / Inscription</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background : linear-gradient(to right, #e0eafc, #cfdef3) ;
+      Background-image : url(‘https://cdn.pixabay.com/photo/2020/04/21/22/50/woman-5073537_1280.jpg’) ;
+      Background-size : cover ;
+      Background-position : center ;
+      Backdrop-filter : blur(5px) ;
+      Color : #333 ;
+    }
+
+    .overlay {
+      Background-color : rgba(255, 255, 255, 0.85) ;
+      Min-height : 100vh ;
+      Display : flex ;
+      Justify-content : center ;
+      Align-items : center ;
+    }
+
+    .form-box {
+      Background-color : white ;
+      Padding : 40px ;
+      Border-radius : 10px ;
+      Box-shadow : 0 0 20px rgba(0,0,0,0.2) ;
+      Width : 100% ;
+      Max-width : 400px ;
+    }
+
+    H2 {
+      Text-align : center ;
+      Margin-bottom : 20px ;
+    }
+
+    Input {
+      Width : 100% ;
+      Padding : 12px ;
+      Margin : 10px 0 ;
+      Border-radius : 5px ;
+      Border : 1px solid #ccc ;
+    }
+
+    Button {
+      Width : 100% ;
+      Padding : 12px ;
+      Background-color : #2980b9 ;
+      Color : white ;
+      Border : none ;
+      Border-radius : 5px ;
+      Cursor : pointer ;
+    }
+
+    Button :hover {
+      Background-color : #3498db ;
+    }
+
+    .toggle {
+      Text-align : center ;
+      Margin-top : 15px ;
+    }
+
+    .toggle a {
+      Color : #2980b9 ;
+      Text-decoration : none ;
+    }
+
+    .toggle a :hover {
+      Text-decoration : underline ;
+    }
+  </style>
+</head>
+<body>
+  <div class= "overlay ">
+    <div class= "form-box ">
+      <h2>Connexion</h2>
+      <form action= »dashboard.html »>
+        <input type= "email " placeholder= "Adresse e-mail " required>
+        <input type= "password " placeholder= "Mot de passe " required>
+        <button type= "submit ">Se connecter</button>
+      </form>
+      <div class= »toggle »>
+        <p>Pas encore de compte ? <a href= "inscription.html">Inscrivez-vous</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

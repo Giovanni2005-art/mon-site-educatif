@@ -1,0 +1,173 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Leçon – Types de données en Python</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background : linear-gradient(to right, #0f2027, #203a43, #2c5364) ;
+      Color : #fff ;
+    }
+
+    Nav {
+      Background-color : rgba(0, 0, 0, 0.3) ;
+      Padding : 15px ;
+      Text-align : center ;
+    }
+
+    Nav a {
+      Color : #fff ;
+      Margin : 0 12px ;
+      Text-decoration : none ;
+    }
+
+    Nav a :hover {
+      Text-decoration : underline ;
+    }
+
+    .container {
+      Max-width : 950px ;
+      Margin : auto ;
+      Padding : 40px 20px ;
+      Background-color : rgba(0, 0, 0, 0.25) ;
+      Border-radius : 12px ;
+      Backdrop-filter : blur(3px) ;
+    }
+
+    H1, h2 {
+      Color : #fff ;
+    }
+
+    Pre {
+      Background : #111 ;
+      Padding : 12px ;
+      Border-radius : 8px ;
+      Overflow-x : auto ;
+      Color : #0f0 ;
+    }
+
+    .quiz {
+      Background : rgba(255,255,255,0.1) ;
+      Padding : 20px ;
+      Border-radius : 10px ;
+      Margin-top : 30px ;
+    }
+
+    .actions {
+      Margin-top : 30px ;
+      Display : flex ;
+      Justify-content : space-between ;
+      Flex-wrap : wrap ;
+    }
+
+    .actions button {
+      Padding : 12px 20px ;
+      Margin : 5px ;
+      Border : none ;
+      Border-radius : 8px ;
+      Background-color : #fff ;
+      Color : #333 ;
+      Cursor : pointer ;
+      Font-weight : bold ;
+      Transition : background 0.2s ;
+    }
+
+    .actions button :hover {
+      Background-color : #eee ;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href= "index.HTML ">Accueil</a>
+  <a href= "matieres.HTML">Matières</a>
+  <a href= "dashboard.HTML">Tableau de bord</a>
+  <a href= "python.HTML">Retour à Python</a>
+</nav>
+
+<div class= "container ">
+  <h1>Leçon 5 : Types de données et structures en Python</h1>
+
+  <h2>1. Nombres</h2>
+  <pre>
+Entier = 10          # int
+Flottant = 3.14      # float
+Complexe = 2 + 3j    # complex
+  </pre>
+
+  <h2>2. Chaînes de caractères</h2>
+  <pre>
+Texte = " Bonjour "
+Print(texte[0])       # B
+Print(len(texte))     # 7
+Print(texte.upper())  # BONJOUR
+  </pre>
+
+  <h2>3. Booléens</h2>
+  <pre>
+Vrai = True
+Faux = False
+
+Print(5 > 2)          # True
+Print(" a " == " b ")     # False
+  </pre>
+
+  <h2>4. Listes</h2>
+  <pre>
+Fruits = [" pomme ", " banane ", " orange "]
+Print(fruits[1])         # banane
+Fruits.append(" kiwi ")    # Ajoute à la fin
+Fruits.remove("pomme ")   # Supprime un élément
+  </pre>
+
+  <h2>5. Tuples (immuables)</h2>
+  <pre>
+Coordonnees = (10, 20)
+Print(coordonnees[0])    # 10
+  </pre>
+
+  <h2>6. Dictionnaires (clé-valeur)</h2>
+  <pre>
+Etudiant = {
+    " nom " : " Alice ",
+    " âge " : 22,
+    "niveau " : " Licence "
+}
+
+Print(etudiant[" nom "])        # Alice
+Etudiant[" niveau "] = " Master " # Modification
+  </pre>
+
+  <h2>7. Ensembles (sets)</h2>
+  <pre>
+Nombres = {1, 2, 3, 3, 4}
+Print(nombres)    # {1, 2, 3, 4}
+Nombres.add(5)
+  </pre>
+
+  <h2>8. Conversion de types</h2>
+  <pre>
+A = " 5 "
+B = int(a) + 2
+Print(b)  # 7
+  </pre>
+
+  <h2>9. Exercice</h2>
+  <div class= "quiz ">
+    <p><strong>Énoncé :</strong> Crée un dictionnaire représentant un livre avec : titre, auteur et nombre de pages. Ajoute un champ « année », puis affiche le tout.</p>
+    <pre>
+# À toi de jouer ici !
+    </pre>
+  </div>
+
+  <div class= "actions ">
+    <button onclick= "window.location.href=’lecon4.HTML’ ">Leçon précédente</button>
+    <button>Marquer comme terminé</button>
+    <button onclick= "window.location.href=’lecon6.HTML’ ">Leçon suivante</button>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Leçon – Bases de Python</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background : linear-gradient(135deg, #3a6186, #89253e) ;
+      Color : #fff ;
+    }
+
+    Nav {
+      Background-color : rgba(0, 0, 0, 0.3) ;
+      Padding : 15px ;
+      Text-align : center ;
+    }
+
+    Nav a {
+      Color : #fff ;
+      Margin : 0 12px ;
+      Text-decoration : none ;
+    }
+
+    Nav a :hover {
+      Text-decoration : underline ;
+    }
+
+    .container {
+      Max-width : 900px ;
+      Margin : auto ;
+      Padding : 40px 20px ;
+      Background-color : rgba(0,0,0,0.3) ;
+      Border-radius : 12px ;
+      Backdrop-filter : blur(4px) ;
+    }
+
+    H1, h2 {
+      Color : #fff ;
+    }
+
+    Pre {
+      Background : #111 ;
+      Padding : 12px ;
+      Border-radius : 8px ;
+      Overflow-x : auto ;
+      Color : #0f0 ;
+    }
+
+    .actions {
+      Margin-top : 30px ;
+      Display : flex ;
+      Justify-content : space-between ;
+      Flex-wrap : wrap ;
+    }
+
+    .actions button {
+      Padding : 12px 20px ;
+      Margin : 5px ;
+      Border : none ;
+      Border-radius : 8px ;
+      Background-color : #fff ;
+      Color : #333 ;
+      Cursor : pointer ;
+      Font-weight : bold ;
+      Transition : background 0.2s ;
+    }
+
+    .actions button :hover {
+      Background-color : #eee ;
+    }
+
+    .quiz {
+      Background : rgba(255,255,255,0.1) ;
+      Padding : 20px ;
+      Border-radius : 10px ;
+      Margin-top : 30px ;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href= "index.HTML ">Accueil</a>
+  <a href= "matieres.HTML">Matières</a>
+  <a href= "dashboard.HTML ">Tableau de bord</a>
+  <a href= "python.HTML ">Retour à Python</a>
+</nav>
+
+<div class= "container ">
+  <h1>Leçon : Bases de Python</h1>
+
+  <h2>1. Introduction</h2>
+  <p>Python est un langage de programmation interprété, simple et lisible. Il est largement utilisé dans les domaines de la data science, de l’IA, du développement web, etc.</p>
+
+  <h2>2. Les variables</h2>
+  <p>En Python, une variable est créée automatiquement lorsqu’on lui assigne une valeur :</p>
+  <pre>
+A = 10
+Nom = " Alice "
+Pi = 3.14
+  </pre>
+
+  <h2>3. Types de données</h2>
+  <ul>
+    <li><strong>int</strong> : nombres entiers (ex : 10)</li>
+    <li><strong>float</strong> : nombres décimaux (ex : 3.14)</li>
+    <li><strong>str</strong> : chaînes de caractères (ex : " Bonjour ")</li>
+    <li><strong>bool</strong> : booléens (True, False)</li>
+  </ul>
+
+  <h2>4. Affichage et types</h2>
+  <pre>
+Print(" Bonjour ")
+Print(type(42))  # Affiche <class ‘int’>
+  </pre>
+
+  <h2>5. Opérations de base</h2>
+  <pre>
+A = 5
+B = 2
+
+Print(a + b)  # Addition
+Print(a * b)  # Multiplication
+Print(a / b)  # Division
+Print(a // b) # Division entière
+Print(a % b)  # Modulo
+Print(a ** b) # Puissance
+  </pre>
+
+  <h2>6. Petit exercice</h2>
+  <div class= "quiz ">
+    <p>**Énoncé :** Écris un programme qui stocke deux nombres et affiche leur somme, différence et produit.</p>
+    <pre>
+X = 8
+Y = 3
+
+# À compléter ici
+    </pre>
+  </div>
+
+  <div class= "actions ">
+    <button>Leçon précédente</button>
+    <button>Marquer comme terminé</button>
+    <button onclick= "window.location.href=’lecon2.HTML’ ">Leçon suivante</button>
+  </div>
+</div>
+
+</body>
+</html>

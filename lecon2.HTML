@@ -1,0 +1,152 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Leçon – Conditions en Python</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background : linear-gradient(to right, #141e30, #243b55) ;
+      Color : #fff ;
+    }
+
+    Nav {
+      Background-color : rgba(0, 0, 0, 0.3) ;
+      Padding : 15px ;
+      Text-align : center ;
+    }
+
+    Nav a {
+      Color : #fff ;
+      Margin : 0 12px ;
+      Text-decoration : none ;
+    }
+
+    Nav a :hover {
+      Text-decoration : underline ;
+    }
+
+    .container {
+      Max-width : 900px ;
+      Margin : auto ;
+      Padding : 40px 20px ;
+      Background-color : rgba(0,0,0,0.3) ;
+      Border-radius : 12px ;
+      Backdrop-filter : blur(4px) ;
+    }
+
+    H1, h2 {
+      Color : #fff ;
+    }
+
+    Pre {
+      Background : #111 ;
+      Padding : 12px ;
+      Border-radius : 8px ;
+      Overflow-x : auto ;
+      Color : #0f0 ;
+    }
+
+    .actions {
+      Margin-top : 30px ;
+      Display : flex ;
+      Justify-content : space-between ;
+      Flex-wrap : wrap ;
+    }
+
+    .actions button {
+      Padding : 12px 20px ;
+      Margin : 5px ;
+      Border : none ;
+      Border-radius : 8px ;
+      Background-color : #fff ;
+      Color : #333 ;
+      Cursor : pointer ;
+      Font-weight : bold ;
+      Transition : background 0.2s ;
+    }
+
+    .actions button :hover {
+      Background-color : #eee ;
+    }
+
+    .quiz {
+      Background : rgba(255,255,255,0.1) ;
+      Padding : 20px ;
+      Border-radius : 10px ;
+      Margin-top : 30px ;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href= "index.HTML">Accueil</a>
+  <a href= "matieres.HTML ">Matières</a>
+  <a href= "dashboard.HTML">Tableau de bord</a>
+  <a href= "python.HTML ">Retour à Python</a>
+</nav>
+
+<div class= "container ">
+  <h1>Leçon : Les conditions en Python</h1>
+
+  <h2>1. Utilisation des conditions</h2>
+  <p>Les conditions permettent d’exécuter du code en fonction d’une situation donnée.</p>
+
+  <pre>
+Age = 18
+
+If age >= 18 :
+    Print(" Vous êtes majeur. ")
+Else :
+    Print(" Vous êtes mineur. ")
+  </pre>
+
+  <h2>2. `if`, `elif`, `else`</h2>
+  <pre>
+Note = 14
+
+If note >= 16 :
+    Print(" Très bien ")
+Elif note >= 10 :
+    Print(" Suffisant ")
+Else :
+    Print(" Insuffisant ")
+  </pre>
+
+  <h2>3. Opérateurs de comparaison</h2>
+  <ul>
+    <li>`==` : égal à</li>
+    <li>` !=` : différent de</li>
+    <li>`>` : strictement supérieur</li>
+    <li>`<` : strictement inférieur</li>
+    <li>`>=`, `<=` : supérieur ou égal, inférieur ou égal</li>
+  </ul>
+
+  <h2>4. Opérateurs logiques</h2>
+  <ul>
+    <li>`and` : et</li>
+    <li>`or` : ou</li>
+    <li>`not` : non</li>
+  </ul>
+
+  <h2>5. Exercice simple</h2>
+  <div class= "quiz ">
+    <p><strong>Énoncé :</strong> Écris un programme qui demande l’âge de l’utilisateur (variable `age`) et affiche s’il peut voter (âge >= 18).</p>
+    <pre>
+# Exemple de base :
+Age = 16
+
+# Complète ici
+    </pre>
+  </div>
+
+  <div class= "actions ">
+    <button onclick= "window.location.href=’lecon1.HTML’ ">Leçon précédente</button>
+    <button>Marquer comme terminé</button>
+    <button onclick= "window.location.href=’lecon3.HTML’ ">Leçon suivante</button>
+  </div>
+</div>
+
+</body>
+</html>

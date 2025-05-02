@@ -1,0 +1,168 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Leçon – Fonctions en Python</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background : linear-gradient(to right, #1e3c72, #2a5298) ;
+      Color : #fff ;
+    }
+
+    Nav {
+      Background-color : rgba(0, 0, 0, 0.3) ;
+      Padding : 15px ;
+      Text-align : center ;
+    }
+
+    Nav a {
+      Color : #fff ;
+      Margin : 0 12px ;
+      Text-decoration : none ;
+    }
+
+    Nav a :hover {
+      Text-decoration : underline ;
+    }
+
+    .container {
+      Max-width : 950px ;
+      Margin : auto ;
+      Padding : 40px 20px ;
+      Background-color : rgba(0, 0, 0, 0.25) ;
+      Border-radius : 12px ;
+      Backdrop-filter : blur(3px) ;
+    }
+
+    H1, h2 {
+      Color : #fff ;
+    }
+
+    Pre {
+      Background : #111 ;
+      Padding : 12px ;
+      Border-radius : 8px ;
+      Overflow-x : auto ;
+      Color : #0f0 ;
+    }
+
+    Img {
+      Max-width : 100% ;
+      Margin-top : 20px ;
+      Border-radius : 10px ;
+    }
+
+    .actions {
+      Margin-top : 30px ;
+      Display : flex ;
+      Justify-content : space-between ;
+      Flex-wrap : wrap ;
+    }
+
+    .actions button {
+      Padding : 12px 20px ;
+      Margin : 5px ;
+      Border : none ;
+      Border-radius : 8px ;
+      Background-color : #fff ;
+      Color : #333 ;
+      Cursor : pointer ;
+      Font-weight : bold ;
+      Transition : background 0.2s ;
+    }
+
+    .actions button :hover {
+      Background-color : #eee ;
+    }
+
+    .quiz {
+      Background : rgba(255,255,255,0.1) ;
+      Padding : 20px ;
+      Border-radius : 10px ;
+      Margin-top : 30px ;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href= "index.HTML">Accueil</a>
+  <a href= "matieres.HTML">Matières</a>
+  <a href= "dashboard.HTml">Tableau de bord</a>
+  <a href= "python.HTML ">Retour à Python</a>
+</nav>
+
+<div class= "container ">
+  <h1>Leçon 4 : Les fonctions en Python</h1>
+
+  <h2>1. Définir une fonction</h2>
+  <p>Les fonctions permettent de réutiliser du code. On les définit avec le mot-clé <code>def</code>.</p>
+  <pre>
+Def saluer() :
+    Print("Bonjour ! ")
+
+Saluer()
+  </pre>
+
+  <h2>2. Paramètres et arguments</h2>
+  <pre>
+Def saluer(nom) :
+    Print(" Bonjour ", nom)
+
+Saluer(" Alice ")
+Saluer(" Bob ")
+  </pre>
+
+  <h2>3. Valeurs de retour</h2>
+  <p>Une fonction peut retourner une valeur avec le mot-clé <code>return</code>.</p>
+  <pre>
+Def carre(x) :
+    Return x * x
+
+Resultat = carre(5)
+Print(resultat)
+  </pre>
+
+  <h2>4. Arguments par défaut</h2>
+  <pre>
+Def bonjour(langage= "Python ") :
+    Print(" Bonjour, programmeur en ", langage)
+
+Bonjour()
+Bonjour(" JavaScript ")
+  </pre>
+
+  <h2>5. Portée des variables</h2>
+  <p>Une variable définie dans une fonction est <strong>locale</strong> à celle-ci.</p>
+  <pre>
+Def exemple() :
+    Message = " Salut "
+    Print(message)
+
+Exemple()
+# print(message)  # Erreur : message n’existe pas ici
+  </pre>
+
+  <h2>6. Illustration</h2>
+  <img src= "A_slide_from_an_educational_tutorial_on_Python_pro.png " alt= "Fonctions Python ">
+
+  <h2>7. Exercice</h2>
+  <div class= "quiz ">
+    <p><strong>Énoncé :</strong> Crée une fonction qui prend deux nombres en paramètre et retourne leur moyenne.</p>
+    <pre>
+# Code ici
+Def moyenne(a, b) :
+    Return …
+    </pre>
+  </div>
+
+  <div class= "actions ">
+    <button onclick= "window.location.href=’lecon3.HTML’ ">Leçon précédente</button>
+    <button>Marquer comme terminé</button>
+    <button onclick= "window.location.href=’lecon5.HTML’ ">Leçon suivante</button>
+  </div>
+</div>
+
+</body>
+</html>

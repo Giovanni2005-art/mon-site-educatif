@@ -1,0 +1,150 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Leçon – Boucles en Python</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background : linear-gradient(to right, #0f2027, #203a43, #2c5364) ;
+      Color : #fff ;
+    }
+
+    Nav {
+      Background-color : rgba(0, 0, 0, 0.3) ;
+      Padding : 15px ;
+      Text-align : center ;
+    }
+
+    Nav a {
+      Color : #fff ;
+      Margin : 0 12px ;
+      Text-decoration : none ;
+    }
+
+    Nav a :hover {
+      Text-decoration : underline ;
+    }
+
+    .container {
+      Max-width : 900px ;
+      Margin : auto ;
+      Padding : 40px 20px ;
+      Background-color : rgba(0,0,0,0.3) ;
+      Border-radius : 12px ;
+      Backdrop-filter : blur(4px) ;
+    }
+
+    H1, h2 {
+      Color : #fff ;
+    }
+
+    Pre {
+      Background : #111 ;
+      Padding : 12px ;
+      Border-radius : 8px ;
+      Overflow-x : auto ;
+      Color : #0f0 ;
+    }
+
+    .actions {
+      Margin-top : 30px ;
+      Display : flex ;
+      Justify-content : space-between ;
+      Flex-wrap : wrap ;
+    }
+
+    .actions button {
+      Padding : 12px 20px ;
+      Margin : 5px ;
+      Border : none ;
+      Border-radius : 8px ;
+      Background-color : #fff ;
+      Color : #333 ;
+      Cursor : pointer ;
+      Font-weight : bold ;
+      Transition : background 0.2s ;
+    }
+
+    .actions button :hover {
+      Background-color : #eee ;
+    }
+
+    .quiz {
+      Background : rgba(255,255,255,0.1) ;
+      Padding : 20px ;
+      Border-radius : 10px ;
+      Margin-top : 30px ;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href= "index.HTML">Accueil</a>
+  <a href= "matieres.html ">Matières</a>
+  <a href= "dashboard.HTML ">Tableau de bord</a>
+  <a href= "python.HTML ">Retour à Python</a>
+</nav>
+
+<div class= "container ">
+  <h1>Leçon : Les boucles en Python</h1>
+
+  <h2>1. La boucle `while`</h2>
+  <p>Elle répète un bloc tant qu’une condition est vraie.</p>
+  <pre>
+I = 0
+While i < 5 :
+    Print(i)
+    I += 1
+  </pre>
+
+  <h2>2. La boucle `for`</h2>
+  <p>Parfaite pour parcourir une séquence (liste, chaîne, etc.).</p>
+  <pre>
+For i in range(5) :
+    Print("i = ", i)
+  </pre>
+
+  <h2>3. Boucle sur une chaîne ou une liste</h2>
+  <pre>
+For lettre in " Python " :
+    Print(lettre)
+
+Fruits = [" pomme ", " banane ", " orange "]
+For fruit in fruits :
+    Print(fruit)
+  </pre>
+
+  <h2>4. `break` et `continue`</h2>
+  <pre>
+# Interruption de la boucle
+For i in range(10) :
+    If i == 5 :
+        Break
+    Print(i)
+
+# Saut d’une itération
+For i in range(5) :
+    If i == 2 :
+        Continue
+    Print(i)
+  </pre>
+
+  <h2>5. Exercice</h2>
+  <div class= "quiz ">
+    <p><strong>Énoncé :</strong> Affiche les nombres de 1 à 10 sauf le 5.</p>
+    <pre>
+# Utilise une boucle avec « continue »
+    </pre>
+  </div>
+
+  <div class= "actions ">
+    <button onclick= "window.location.href=’lecon2.HTML’ ">Leçon précédente</button>
+    <button>Marquer comme terminé</button>
+    <button onclick= "window.location.href=’lecon4.HTML’ ">Leçon suivante</button>
+  </div>
+</div>
+
+</body>
+</html>

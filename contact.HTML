@@ -1,0 +1,82 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Contact / Support</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : Arial, sans-serif ;
+      Background : linear-gradient(to bottom right, #ff9966, #ff5e62) ;
+      Color : white ;
+      Line-height : 1.6 ;
+    }
+    Nav {
+      Background-color : rgba(0, 0, 0, 0.3) ;
+      Padding : 15px ;
+      Text-align : center ;
+    }
+    Nav a {
+      Color : white ;
+      Margin : 0 15px ;
+      Text-decoration : none ;
+    }
+    Nav a :hover {
+      Text-decoration : underline ;
+    }
+    .container {
+      Max-width : 800px ;
+      Margin : 50px auto ;
+      Background-color : rgba(255, 255, 255, 0.1) ;
+      Padding : 30px ;
+      Border-radius : 12px ;
+    }
+    H1 {
+      Text-align : center ;
+    }
+    Form label {
+      Display : block ;
+      Margin-top : 15px ;
+    }
+    Form input, form textarea {
+      Width : 100% ;
+      Padding : 10px ;
+      Border-radius : 8px ;
+      Border : none ;
+      Margin-top : 5px ;
+    }
+    Form button {
+      Margin-top : 20px ;
+      Padding : 10px 20px ;
+      Border : none ;
+      Border-radius : 8px ;
+      Background-color : #fff ;
+      Color : #333 ;
+      Cursor : pointer ;
+    }
+    Form button :hover {
+      Background-color : #eee ;
+    }
+  </style>
+</head>
+<body><nav>
+  <a href= "index.HTML">Accueil</a>
+  <a href= "dashboard.HTML">Tableau de bord</a>
+  <a href= "certification.HTML">Certifications</a>
+  <a href= "parametres.HTML">Paramètres</a>
+  <a href= "contact.HTML">Contact</a>
+</nav>
+<div class= "container ">
+  <h1>Contact & Support</h1>
+  <p>Si vous avez des questions, des remarques ou si vous rencontrez un problème technique, n’hésitez pas à nous contacter via ce formulaire :</p>  <form>
+    <label for= "name ">Nom :</label>
+    <input type= "text " id= "name " name= "name " required><label for= "email ">Email :</label>
+<input type= "email " id= "email " name= "email " required>
+
+<label for= "message ">Message :</label>
+<textarea id= "message " name= "message " rows= "6 " required></textarea>
+
+<button type= "submit ">Envoyer</button>
+
+  </form>
+</div></body>
+</html>

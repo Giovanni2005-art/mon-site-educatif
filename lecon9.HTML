@@ -1,0 +1,170 @@
+<html lang= " fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Leçon – Modules et bibliothèques en Python</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background : linear-gradient(to right, #0f2027, #203a43, #2c5364) ;
+      Color : #fff ;
+    }
+
+    Nav {
+      Background-color : rgba(0, 0, 0, 0.3) ;
+      Padding : 15px ;
+      Text-align : center ;
+    }
+
+    Nav a {
+      Color : #fff ;
+      Margin : 0 12px ;
+      Text-decoration : none ;
+    }
+
+    Nav a :hover {
+      Text-decoration : underline ;
+    }
+
+    .container {
+      Max-width : 950px ;
+      Margin : auto ;
+      Padding : 40px 20px ;
+      Background-color : rgba(0, 0, 0, 0.25) ;
+      Border-radius : 12px ;
+      Backdrop-filter : blur(3px) ;
+    }
+
+    H1, h2 {
+      Color : #fff ;
+    }
+
+    Pre {
+      Background : #111 ;
+      Padding : 12px ;
+      Border-radius : 8px ;
+      Overflow-x : auto ;
+      Color : #0f0 ;
+    }
+
+    .quiz {
+      Background : rgba(255,255,255,0.1) ;
+      Padding : 20px ;
+      Border-radius : 10px ;
+      Margin-top : 30px ;
+    }
+
+    .actions {
+      Margin-top : 30px ;
+      Display : flex ;
+      Justify-content : space-between ;
+      Flex-wrap : wrap ;
+    }
+
+    .actions button {
+      Padding : 12px 20px ;
+      Margin : 5px ;
+      Border : none ;
+      Border-radius : 8px ;
+      Background-color : #fff ;
+      Color : #333 ;
+      Cursor : pointer ;
+      Font-weight : bold ;
+      Transition : background 0.2s ;
+    }
+
+    .actions button :hover {
+      Background-color : #eee ;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href= "index.HTML">Accueil</a>
+  <a href= "matieres.HTML">Matières</a>
+  <a href= "dashboard.HTML">Tableau de bord</a>
+  <a href= "python.HTML">Retour à Python</a>
+</nav>
+
+<div class= "container >
+  <h1>Leçon 9 : Modules et bibliothèques en Python</h1>
+
+  <h2>1. Qu’est-ce qu’un module ?</h2>
+  <p>Un module est un fichier Python (.py) contenant des fonctions, classes ou variables qu’on peut réutiliser.</p>
+
+  <pre>
+# mon_module.py
+Def saluer(nom) :
+    Return f "Bonjour {nom} ! "
+  </pre>
+
+  <h2>2. Importer un module</h2>
+  <pre>
+Import mon_module
+
+Message = mon_module.saluer(" Alice ")
+Print(message)
+  </pre>
+
+  <h2>3. Importer des éléments spécifiques</h2>
+  <pre>
+From mon_module import saluer
+
+Print(saluer(" Bob "))
+  </pre>
+
+  <h2>4. Bibliothèques standards</h2>
+  <p>Python propose de nombreuses bibliothèques prêtes à l’emploi :</p>
+  <ul>
+    <li><code>math</code> : fonctions mathématiques</li>
+    <li><code>random</code> : nombres aléatoires</li>
+    <li><code>datetime</code> : gestion du temps et des dates</li>
+    <li><code>os</code> : interaction avec le système d’exploitation</li>
+  </ul>
+
+  <pre>
+Import math
+Print(math.sqrt(16))  # racine carrée
+
+Import random
+Print(random.randint(1, 10))  # nombre aléatoire entre 1 et 10
+  </pre>
+
+  <h2>5. Installer une bibliothèque externe</h2>
+  <p>Utilise <code>pip</code> dans le terminal :</p>
+  <pre>
+Pip install requests
+  </pre>
+
+  <h2>6. Exemple avec une bibliothèque externe : <code>requests</code></h2>
+  <pre>
+Import requests
+
+Reponse = requests.get(https://api.github.com)
+Print(reponse.status_code)
+Print(reponse.json())
+  </pre>
+
+  <h2>7. Exercice</h2>
+  <div class= "quiz ">
+    <p><strong>Énoncé :</strong> Crée un fichier appelé <code>mes_utilitaires.py</code> contenant une fonction <code>carre(n)</code> qui retourne le carré d’un nombre. Ensuite, importe ce module et utilise la fonction dans un autre fichier.</p>
+    <pre>
+# mes_utilitaires.py
+# def carre(n) :
+#     …
+
+# main.py
+# from mes_utilitaires import carre
+# print(carre(6))
+    </pre>
+  </div>
+
+  <div class= "actions ">
+    <button onclick= "window.location.href=’lecon8.HTML’ ">Leçon précédente</button>
+    <button>Marquer comme terminé</button>
+  </div>
+</div>
+
+</body>
+</html>

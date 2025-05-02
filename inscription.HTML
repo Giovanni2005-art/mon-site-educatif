@@ -1,0 +1,93 @@
+<html lang= "fr ">
+<head>
+  <meta charset= "UTF-8 ">
+  <title>Inscription</title>
+  <style>
+    Body {
+      Margin : 0 ;
+      Font-family : ‘Segoe UI’, sans-serif ;
+      Background : linear-gradient(to right, #fdfbfb, #ebedee) ;
+      Background-image : url(‘https://cdn.pixabay.com/photo/2016/11/19/11/38/african-1836083_1280.jpg’) ;
+      Background-size : cover ;
+      Background-position : center ;
+      Backdrop-filter : blur(4px) ;
+      Color : #333 ;
+    }
+
+    .overlay {
+      Background-color : rgba(255, 255, 255, 0.9) ;
+      Min-height : 100vh ;
+      Display : flex ;
+      Justify-content : center ;
+      Align-items : center ;
+    }
+
+    .form-box {
+      Background-color : white ;
+      Padding : 40px ;
+      Border-radius : 10px ;
+      Box-shadow : 0 0 20px rgba(0,0,0,0.1) ;
+      Width : 100% ;
+      Max-width : 450px ;
+    }
+
+    H2 {
+      Text-align : center ;
+      Margin-bottom : 20px ;
+    }
+
+    Input {
+      Width : 100% ;
+      Padding : 12px ;
+      Margin : 10px 0 ;
+      Border-radius : 5px ;
+      Border : 1px solid #ccc ;
+    }
+
+    Button {
+      Width : 100% ;
+      Padding : 12px ;
+      Background-color : #27ae60 ;
+      Color : white ;
+      Border : none ;
+      Border-radius : 5px ;
+      Cursor : pointer ;
+    }
+
+    Button :hover {
+      Background-color : #2ecc71 ;
+    }
+
+    .toggle {
+      Text-align : center ;
+      Margin-top : 15px ;
+    }
+
+    .toggle a {
+      Color : #2980b9 ;
+      Text-decoration : none ;
+    }
+
+    .toggle a :hover {
+      Text-decoration : underline ;
+    }
+  </style>
+</head>
+<body>
+  <div class= "overlay ">
+    <div class= »form-box ">
+      <h2>Créer un compte</h2>
+      <form action= "dashboard.html ">
+        <input type= "text " placeholder= "Nom complet " required>
+        <input type= "email " placeholder= "Adresse e-mail " required>
+        <input type= "password " placeholder= "Mot de passe " required>
+        <input type= "password " placeholder= "Confirmer le mot de passe " required>
+        <button type= "submit ">S’inscrire</button>
+      </form>
+      <div class= "toggle ">
+        <p>Déjà inscrit ? <a href= "connexion.HTML ">Se connecter</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
